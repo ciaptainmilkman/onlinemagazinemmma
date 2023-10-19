@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/*css for header+navbar*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url(website/img+video/background\ image.png);
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4) transparent);
+    transition: 0.1s;
+}
+.header:hover::after{
+    left: 100%;
+}
+.logo{
+    width: 10%;
+}
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+#check {
+    display: none;
+}
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+/*end of header+navbar styling*/
+
+/*start of image styling*/
+
+
+img{
+    width: 40%;
+}
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+video{
+
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 100%;
+}
+.img1{
+    background-image: url(website/img+video/image\ 1.jpg);
+}
+.img2{
+    background-image: url(website/img+video/image\ 2.png);
+}
+.img3{
+    background-image: url(website/img+video/image\ 3.png);
+}
+.img4{
+    background-image: url(website/img+video/toes\ after\ wrong\ kick.png);
+}
+.img5{
+    background-image: url(website/img+video/image\ 5.png);
+}
+.img6{
+    background-image: url(website/img+video/image\ 6.png);
+}
+
+ .img7{
+    background-image: url(website/img+video/jab.png);
+ }  
+.img8{
+    background-image: url(website/img+video/mmapp.png);
+}
+/* end of image styling*/
+/*text+text container styling starts here*/
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center; 
+  align-items: center; 
+  
+}
+
+.card {
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+    width: 270px;
+    margin: 10px;
+    color: white;
+    border: solid 2px ;
+    border-color: #333;
+    border-style: outset;
+    justify-content: space-evenly;
+    border-radius: 15px 15px 0 0;
+   
+}
+.card:hover{
+    transform: scale(1.03);
+   transition: all 1s ease;
+
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: rgba(0, 0, 0, .90);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+/*text+text container styling ends here*/
+
+/*footer styling start*/
+footer{
+    background: rgba(0, 0, 0, .1);;
+    backdrop-filter: blur(10px);
+    width:100%;
+    height: 18%;
+    position:fixed;
+    bottom:0;
+    padding: 35px 0;
+    
+    
+}
+.container2{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col, ul, li, a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    
+    transition: all 0.3s 
+
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background: #ffffff;
+}
+/*media queries*/
+@media (max-width: 992px) {
+    .header{
+        padding: 1.3rem 5%;
+    }
+    img {
+        width: 50%;
+        
+    }
+}
+@media (max-width: 768px) {
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 17.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay:calc(.15s * var(--i));
+    }
+}
+img {
+    width: 50%;
+    position: relative;
+}
+@media (max-width: 1158px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        justify-content: center; 
+        align-items: center; 
+        bottom: -10%;
+       
+    }
+.footer-col{
+    width: 25%;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width:708){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 245) {
+    .container {
+        flex-shrink: -15px;
+    }
+    
+}
